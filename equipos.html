@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ahorra Energía - Consumo de Equipos</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">AhorraEnergía</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link active" href="equipos.html">Equipos</a></li>
+          <li class="nav-item"><a class="nav-link" href="mi-factura.html">Mi Factura</a></li>
+          <li class="nav-item"><a class="nav-link" href="encuesta.html">Encuesta</a></li>
+          <li class="nav-item"><a class="nav-link" href="registro.html">Registro</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="bg-primary text-white text-center py-4 mb-4">
+    <div class="container">
+      <h1 class="display-5 fw-bold">Inventario y Consumo de Equipos</h1>
+      <p class="lead">Estimación semanal basada en la tarifa real de EPM ($816,54 COP/kWh)</p>
+    </div>
+  </header>
+
+  <main class="container my-4">
+
+    <div class="card mb-4">
+      <div class="card-body">
+        <h2 class="h4 card-title">Consumo de Equipos en el Hogar <span class="badge bg-info text-dark">EPM Estrato 3</span></h2>
+        <p class="card-text">En la siguiente tabla se detalla la potencia y las horas de uso habituales de cuatro equipos eléctricos en nuestro hogar.</p>
+      </div>
+    </div>
+
+    <div class="table-responsive mb-5">
+      <table class="table table-bordered table-striped align-middle">
+        <thead class="table-dark">
+          <tr>
+            <th scope="col">Categoría</th>
+            <th scope="col">Equipo</th>
+            <th scope="col">Potencia (W)</th>
+            <th scope="col">Uso L-V (h/día)</th>
+            <th scope="col">Uso S-D (h/día)</th>
+            <th scope="col">Horas/Semana</th>
+            <th scope="col">kWh/Semana</th>
+            <th scope="col">Costo Semanal (COP)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td rowspan="2" class="fw-bold align-middle bg-light text-center">Electrodomésticos Principales</td>
+            <td>Nevera</td>
+            <td>150 W</td>
+            <td>24 h</td>
+            <td>24 h</td>
+            <td>168 h</td>
+            <td>25.20 kWh</td>
+            <td>$20,576.81</td>
+          </tr>
+          <tr>
+            <td>Lavadora</td>
+            <td>500 W</td>
+            <td>1 h</td>
+            <td>3 h</td>
+            <td>11 h</td>
+            <td>5.50 kWh</td>
+            <td>$4,490.97</td>
+          </tr>
+          <tr>
+            <td rowspan="2" class="fw-bold align-middle bg-light text-center">Tecnología y Entretenimiento</td>
+            <td>Televisor LED</td>
+            <td>100 W</td>
+            <td>4 h</td>
+            <td>6 h</td>
+            <td>32 h</td>
+            <td>3.20 kWh</td>
+            <td>$2,612.93</td>
+          </tr>
+          <tr>
+            <td>Computador Portátil</td>
+            <td>65 W</td>
+            <td>8 h</td>
+            <td>4 h</td>
+            <td>48 h</td>
+            <td>3.12 kWh</td>
+            <td>$2,547.60</td>
+          </tr>
+        </tbody>
+        <tfoot class="table-secondary fw-bold">
+          <tr>
+            <td colspan="6" class="text-end">Total Consumo Semanal Estimado:</td>
+            <td>37.02 kWh</td>
+            <td>$30,228.31 COP</td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+
+    <section>
+      <h2 class="mb-4">Evidencia Fotográfica de Placas de Potencia</h2>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3">
+          <figure class="figure border rounded p-2 text-center bg-light w-100">
+            <img src="img/nevera.jpg" class="figure-img img-fluid rounded" alt="Etiqueta de especificaciones eléctricas de la nevera mostrando la potencia en vatios">
+            <figcaption class="figure-caption fw-semibold">Placa de la Nevera (150W)</figcaption>
+          </figure>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <figure class="figure border rounded p-2 text-center bg-light w-100">
+            <img src="img/lavadora.jpg" class="figure-img img-fluid rounded" alt="Placa de características técnicas de la lavadora con potencia de consumo">
+            <figcaption class="figure-caption fw-semibold">Placa de la Lavadora (500W)</figcaption>
+          </figure>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <figure class="figure border rounded p-2 text-center bg-light w-100">
+            <img src="img/televisor.jpg" class="figure-img img-fluid rounded" alt="Etiqueta posterior de televisor LED indicando voltaje y potencia">
+            <figcaption class="figure-caption fw-semibold">Etiqueta del Televisor LED (100W)</figcaption>
+          </figure>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <figure class="figure border rounded p-2 text-center bg-light w-100">
+            <img src="img/computador.jpg" class="figure-img img-fluid rounded" alt="Cargador o etiqueta de computador portátil indicando potencia eléctrica">
+            <figcaption class="figure-caption fw-semibold">Etiqueta del Computador (65W)</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="bg-dark text-white text-center py-3 mt-5">
+    <div class="container">
+      <p class="mb-0">&copy; 2026 - Ahorra Energía | Elaborado por Juan Esteban Franco Monsalve</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
